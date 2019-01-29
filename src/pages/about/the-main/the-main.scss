@@ -1,0 +1,217 @@
+@import "../../scss/variables";
+@import "../../mixins/mixins";
+.wrapper {
+  @include site-width;
+
+  .the-main {
+    @include flexbox-row-2;
+    .all-main {
+      @include flexbox-column;
+      margin: 50px 0 0 40px;
+      .article-text {
+        font-family: 'Raleway', 'sans-serif';
+        color: #464646;
+        font-size: 15px;
+        text-align: left;
+        font-weight: 700;
+        margin: 0 0 5px 0;
+      }
+
+      .text-1 {
+        @include text-in-about;
+        margin: 10px 0 30px 0;
+        width: 650px;
+      }
+
+      .main-photo {
+        @include flexbox-row-2;
+      }
+
+      .text-2 {
+        @include text-in-about;
+        width: 400px;
+        margin: 0 0 0 20px;
+      }
+
+      .text-3 {
+        @include text-in-about;
+        margin: 30px 0 0 0;
+        width: 660px;
+      }
+
+      .text-5 {
+        font-family: $font;
+        margin: 20px 0 20px 0;
+        color: #414141;
+        font-size: 12px;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 18px;
+        text-align: left;
+        width: 600px;
+        i {
+          color: #cccccc;
+          margin: 20px 30px 0 0;
+        }
+      }
+      .text-6 {
+        @include flexbox-row-2;
+        .text-1-6 {
+         @include text-in-about;
+          width: 300px;
+          margin: 30px 70px 0 0;
+        }
+        .text-2-6 {
+          @include text-in-about;
+          width: 200px;
+          margin: 50px 20px 0 0;
+        }
+      }
+
+      .buttons-1,
+      .buttons-2 {
+        @include flexbox-row-2;
+        .btn-1 {
+          background-color: #8caf2f;
+        }
+        .btn-2 {
+          background-color: #d1d1d1;
+        }
+        .btn-3 {
+          background-color: #6aa2f7;
+        }
+        .btn-4 {
+          background-color: #f67441;
+        }
+        .btn-5 {
+          background-color: #f16bef;
+        }
+        .btn-6 {
+          background-color: #f95151;
+        }
+        .btn-7 {
+          background-color: #61e0e8;
+        }
+
+        .btn-1,
+        .btn-2,
+        .btn-3,
+        .btn-4,
+        .btn-5,
+        .btn-6,
+        .btn-7 {
+          width: 100px;
+          height: 35px;
+          border: none;
+          font-family: 'Raleway', 'sans-serif';
+          color: #ffffff;
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 20px;
+          text-align: center;
+          text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+          margin: 30px 20px 0 0;
+        }
+        .btn-1:hover,
+        .btn-2:hover,
+        .btn-3:hover,
+        .btn-4:hover,
+        .btn-5:hover,
+        .btn-6:hover,
+        .btn-7:hover{
+          opacity: 0.8;
+          cursor: pointer;
+          border: 2px solid #ffffff;
+        }
+      }
+      .block-1 {
+        border-color: #98c601;
+        background-color: #effeb9;
+        color: #98c601;
+        @include block;
+      }
+      .block-2 {
+        border-color: #eb5439;
+        background-color: #fbcbc1;
+        color: #eb5439;
+       @include block;
+      }
+
+      .block-3 {
+        border-color: #fab418;
+        background-color: #ffe9ad;
+        color: #fab418;
+        @include block;
+
+      }
+      .block-4 {
+        border-color: #4d8fcb;
+        background-color: #d1e4f3;
+        color: #4d8fcb;
+        @include block;
+        margin: 30px 0 50px 0;
+      }
+    }
+    .sidebar{
+      margin: 5px 0 0 100px;
+      .article-text{
+        font-family: $font;
+        color: #464646;
+        font-size: 15px;
+        text-align: left;
+        font-weight: 700;
+        margin: 48px 0 0 0;
+      }
+      .line{
+        margin: 0 0 5px 0;
+      }
+      .text-1{
+        font-family: $font;
+        color:  #464646;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: left;
+        width: 200px;
+      }
+
+      .categories{
+        font-family: $font;
+        color:  #464646;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: left;
+         li{
+           list-style: none;
+         }
+      }
+      .twitter-text-1{
+        font-family: $font;
+        color:  #464646;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 14px;
+        text-align: left;
+        width: 200px;
+        margin: 10px 0 10px 0;
+      }
+      .twitter-text-2{
+        font-family: $font;
+        color:  #999999;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: left;
+
+      }
+      .twitter-text-3{
+        font-family: $font;
+        color:  #464646;
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 14px;
+        text-align: left;
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+}

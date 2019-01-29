@@ -1,0 +1,216 @@
+@import "../scss/variables";
+@import "../mixins/mixins";
+.header-content{
+  @include flexbox-row;
+  background: url("/img/bg-header.png");
+  padding: 60px 0 0 40px;
+
+    .header-left{
+      display: flex;
+      flex-direction: column;
+
+      .header-text-1{
+        font-family: $font;
+        color:  #ffffff;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: left;
+        width: 280px;
+
+      }
+
+      .header-text-2{
+        font-family:$font;
+        color:  #ffffff;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        width:450px;
+        margin: 30px 0 0 0;
+      }
+      .header-btn{
+        margin: 30px 0 0 0;
+        border: none;
+        border-radius: 5px;
+        background-color:  #999999;
+        width: 142px;
+        height: 36px;
+        font-family:$font;
+        color:  #ffffff;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+
+      }
+      .header-btn:hover{
+        cursor: pointer;
+        background-color: #cccccc;
+      }
+    }
+  .right {
+    display: flex;
+    flex-direction: column;
+    margin: -20px 0 50px 100px;
+    .header-img {
+
+    }
+    .icons {
+      display: flex;
+      flex-direction: row;
+      padding: 30px 0 50px 300px;
+      i {
+        color: #bebebe;
+        padding: 0 10px 0 0 ;
+      }
+      #icon-dark{
+        color:  #888888;
+      }
+    }
+  }
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 100px;
+  .card{
+    width: 220px;
+    background-color: #fff;
+    margin: -50px 50px 0 0;
+    z-index: 1;
+
+
+    .card-text{
+      display: flex;
+      flex-direction: column;
+      .card-text-1{
+        font-family: $font;
+        color:  #171717;
+        font-size: 15px;
+        font-weight: 900;
+        text-align: left;
+        padding: 20px 0 20px 20px;
+      }
+      .card-text-2{
+        font-family: $font;
+        color:  #8e8e8e;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        padding: 0 0 20px 20px;
+        width:200px;
+      }
+
+      .card-text-3{
+        font-family: $font;
+        color:  #333333;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        width:170px;
+        padding: 0 0 30px 20px;
+      }
+      .divider{
+
+        margin:0 0 20px 20px;
+      }
+      .card-text-4{
+        font-family: $font;
+        color:  #333333;
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 16px;
+        text-align: left;
+        padding: 0 0 150px 20px;
+      }
+    }
+  }
+
+}
+.work-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 150px;
+  .text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 15px 0;
+    font-family: $font;
+    color: #464646;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+
+    .icons {
+      margin: -20px 0 0 700px;
+      i {
+        color: #dcdcdc;
+        padding: 0 5px 0 0;
+
+      }
+      #icon-dark {
+        color: #bababa;
+      }
+    }
+  }
+  .line {
+    width: 915px;
+    margin: 0 0 50px 0;
+  }
+  .recent {
+    display: flex;
+    flex-direction: row;
+    .text-recent {
+      display: flex;
+      flex-direction: column;
+
+      .text-small {
+        font-family: $font;
+        width: 180px;
+        color: #8e8e8e;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+      }
+      .text-big {
+        margin: 10px 0 0 0;
+        color: #333333;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        width: 170px;
+        font-family:$font;
+      }
+    }
+  }
+  .recent-img {
+    display: flex;
+    flex-direction: column;
+    .row-1 {
+      display: flex;
+      flex-direction: row;
+      margin: 0 0 30px 30px;
+
+      img {
+        padding: 0 20px 0 0;
+      }
+    }
+    .row-2 {
+      display: flex;
+      flex-direction: row;
+      margin: 0 0 80px 30px;
+
+      img {
+        padding: 0 20px 0 0;
+      }
+    }
+  }
+}

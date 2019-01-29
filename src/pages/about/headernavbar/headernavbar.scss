@@ -1,0 +1,62 @@
+@import "../../scss/variables";
+@import "../../mixins/mixins";
+*{
+  @include site-settings;
+}
+
+.wrapper {
+  @include site-width;
+
+  .header {
+    background: url('/img/bg-header.png');
+
+    .header-navbar {
+      .logo {
+        padding: 0 150px 0 20px;
+      }
+
+      @include flexbox-row;
+      padding: 20px 0 20px 20px;
+      @include headernavbar-text;
+
+      li {
+        display: inline;
+        margin: 0 50px 0 0;
+        cursor: pointer;
+        padding: 10px 10px 10px 10px;
+
+      }
+      li:hover{
+        background-color: #2f2f2f;
+        border-radius: 5px;
+      }
+
+      a{
+        text-decoration: none;
+        color: #ffffff;
+      }
+
+      .header-input {
+        background-color: #2f2f2f;
+        box-shadow: 0px 1px 0px 0px rgba(46, 46, 46, 0.6);
+        width: 150px;
+        height: 25px;
+        border: 1px solid #2f2f2f;
+        border-radius: 5px;
+        margin: 0 0 0 50px;
+      }
+      .header-input:hover{
+        background-color: #cccccc;
+        opacity: 0.8;
+      }
+      .header-input:focus{
+        outline: none;
+        border: 1px solid #000000;
+
+      }
+      i {
+        margin: 0 -0px 0 20px;
+      }
+    }
+  }
+}

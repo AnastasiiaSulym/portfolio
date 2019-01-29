@@ -1,0 +1,146 @@
+@import "../../scss/variables";
+@import "../../mixins/mixins";
+* {
+ @include site-settings;
+}
+.wrapper {
+  .all-main {
+    @include flexbox-row-2();
+
+    .main {
+      @include flexbox-column();
+      margin: 0 0 0 40px;
+
+      .article {
+        font-family: $font;
+        color: #464646;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: left;
+        margin: 40px 0 5px 0px;
+      }
+
+      .text-1 {
+        font-family: $font;
+        color: #414141;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        width: 650px;
+        margin: 5px 0 0 0px;
+      }
+
+    }
+    .main-1{
+     @include flexbox-row-2;
+
+
+      .text-2{
+        width: 280px;
+        font-family:$font;
+        color:  #414141;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        margin: 0 0 80px 0;
+
+
+        li{
+          list-style: none;
+        }
+      }
+    }
+
+    .main-2 {
+     @include flexbox-column;
+      margin: 0 0 0 150px;
+
+      .text-3 {
+        font-family: $font;
+        color:  #414141;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        li {
+          list-style: none;
+        }
+      }
+      .text-4{
+        font-family: $font;
+        color:  #414141;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        li {
+          list-style: none;
+        }
+      }
+    }
+    .sidebar{
+      margin: -5px 0 0 150px;
+      .article-text{
+        font-family: $font;
+        color: #464646;
+        font-size: 15px;
+        text-align: left;
+        font-weight: 700;
+        margin: 48px 0 0 0;
+      }
+      .line{
+        margin: 0 0 5px 0;
+      }
+      .text-1{
+        font-family: $font;
+        color:  #464646;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: left;
+        width: 200px;
+      }
+
+      .categories{
+        font-family: 'Raleway', 'sans-serif';
+        color:  #464646;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: left;
+        li{
+          list-style: none;
+        }
+      }
+      .twitter-text-1{
+        font-family: 'Raleway', 'sans-serif';
+        color:  #464646;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 14px;
+        text-align: left;
+        width: 200px;
+        margin: 10px 0 10px 0;
+      }
+      .twitter-text-2{
+        font-family: 'Raleway', 'sans-serif';
+        color:  #999999;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: left;
+
+      }
+      .twitter-text-3{
+        font-family: 'Raleway', 'sans-serif';
+        color:  #464646;
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 14px;
+        text-align: left;
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,84 @@
+@import "../scss/variables";
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 0 0 150px;
+
+  .main-article {
+    font-family: $font;
+    color: #464646;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0 0 10px 0;
+  }
+  .line {
+    width: 950px;
+  }
+  .main-photos {
+
+    .nav-photos {
+      li,
+      button {
+        display: inline;
+        list-style: none;
+        color: #464646;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: left;
+        font-family: $font;
+        text-shadow: 0px -1px 0px rgba(255, 255, 255, 0.2);
+        padding: 15px 10px 0 0;
+      }
+
+      button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+    .images {
+      display: flex;
+      flex-direction: row;
+      margin: 40px 0 0 0;
+
+      .img1,
+      .img4 {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px 0 0;
+
+      }
+        .img1:hover,
+        .img4:hover{
+          cursor: pointer;
+        }
+
+      .text {
+        font-family: $font;
+        margin: 10px 0 0 0;
+        color: #464646;
+        font-size: 14.74px;
+
+        font-weight: 700;
+        line-height: 20px;
+        text-align: left;
+      }
+
+      i {
+        color: #464646;
+      }
+
+      .text-small {
+        font-family: $font;
+        color: #969697;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: left;
+        margin: 5px 0 50px 0;
+      }
+    }
+  }
+}
+
